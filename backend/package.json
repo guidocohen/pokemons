@@ -38,8 +38,6 @@
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/swagger": "^7.4.0",
     "@nestjs/typeorm": "^10.0.2",
-    "class-transformer": "npm:@nestjs/class-transformer@^0.4.0",
-    "class-validator": "npm:@nestjs/class-validator@^0.13.4",
     "joi": "^17.13.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",

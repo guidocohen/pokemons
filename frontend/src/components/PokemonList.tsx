@@ -9,6 +9,7 @@ export const PokemonList: React.FC<PokemonListProps> = ({
   pokemons,
   onSelect,
   loading,
+  loadingBattle,
 }) => {
   return (
     <Grid container spacing={2} sx={{ marginBottom: 6 }}>
@@ -23,6 +24,7 @@ export const PokemonList: React.FC<PokemonListProps> = ({
               <PokemonCard
                 pokemon={pokemon}
                 onSelect={onSelect}
+                loadingBattle={loadingBattle}
               />
             </Grid>
           ))}

@@ -51,6 +51,7 @@ const App: React.FC = () => {
             pokemons={pokemons}
             onSelect={handleSelect}
             loading={loading}
+            loadingBattle={loadingBattle}
           />
           <Battle
             pokemon1={selectedPokemon1}

@@ -9,10 +9,18 @@ import {
 } from "@mui/material";
 import { PokemonCardProps } from "../../types/PokemonCardProps";
 
-const PokemonCard = ({ pokemon, onSelect }: PokemonCardProps) => {
+const PokemonCard = ({
+  pokemon,
+  loadingBattle,
+  onSelect,
+}: PokemonCardProps) => {
   return (
     <Card sx={{ borderRadius: "10px" }} elevation={6}>
-      <CardActionArea sx={{ flex: 1 }} onClick={() => onSelect(pokemon)}>
+      <CardActionArea
+        sx={{ flex: 1, cursor: loadingBattle ? "not-allowed" : "pointer" }}
+        onClick={() => !loadingBattle && onSelect(pokemon)}
+        disabled={loadingBattle}
+      >
         <Box
           sx={{
             display: "flex",
